@@ -1,0 +1,13 @@
+version: "3.8"
+ 
+services:
+  app:
+    container_name: VSingh_assign1
+    image: app-dev
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:7775
